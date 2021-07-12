@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EAEAEA"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/tv_done_listFragment"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="13sp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/background_filled_radius_white"
+            android:gravity="center"
+            android:text="done"
+            android:textColor="#DA000000"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_todo_listFragment"
+            android:layout_width="70dp"
+            android:elevation="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/tv_todo"
+            android:background="@drawable/background_filled_blue"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMaxTextSize="13sp"
+            android:text="todo"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_3">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_listFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/bt_floating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="70dp"
+            android:backgroundTint="#F9AA33" />
+
+
+    </FrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

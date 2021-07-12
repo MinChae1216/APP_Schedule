@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#E1C1C5"
+        app:mcv_showOtherDates="defaults"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bt_calendarNO"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_marginVertical="20dp"
+            android:background="@drawable/background_button_border"
+            android:fontFamily="@font/jalnan"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#B97A56"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/bt_calendarOK"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginVertical="20dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background_filled_yellow"
+            android:fontFamily="@font/jalnan"
+            android:gravity="center"
+            android:text="설정"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

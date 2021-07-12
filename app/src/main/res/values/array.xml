@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array">
+        <item>1일</item>
+        <item>3일</item>
+        <item>1주일</item>
+        <item>한달</item>
+        <item>두달</item>
+    </string-array>
+</resources>
